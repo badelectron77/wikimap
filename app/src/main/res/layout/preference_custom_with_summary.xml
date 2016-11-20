@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:minHeight="?android:attr/listPreferredItemHeight"
+    android:baselineAligned="false">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@android:id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="marquee"
+            android:fadingEdge="horizontal"
+            android:singleLine="true"
+            android:textSize="@dimen/text_size_body"/>
+
+        <TextView
+            android:id="@android:id/summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@android:id/title"
+            android:layout_alignStart="@android:id/title"
+            android:layout_below="@android:id/title"
+            android:layout_marginTop="2dp"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_small_caps"/>
+
+    </RelativeLayout>
+
+    <!-- Komischerweise werden z.B. Checkboxen hier rein gesetzt; das ist ganz rechts -->
+    <LinearLayout
+        android:id="@android:id/widget_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="vertical" />
+
+</LinearLayout>

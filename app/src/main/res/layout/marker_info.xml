@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:scrollbars="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/big_image"
+            android:scaleType="centerCrop"
+            android:contentDescription="@string/app_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/title"
+            android:fontFamily="serif"
+            android:textSize="21sp"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"
+            android:paddingLeft="@dimen/text_edge_padding_infopopup"
+            android:paddingRight="@dimen/text_edge_padding_infopopup"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"/>
+
+        <TextView
+            android:id="@+id/distance"
+            android:textSize="@dimen/text_size_body"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/text_edge_padding_infopopup"
+            android:paddingRight="@dimen/text_edge_padding_infopopup"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/elevation"
+            android:textSize="@dimen/text_size_body"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/text_edge_padding_infopopup"
+            android:paddingRight="@dimen/text_edge_padding_infopopup"
+            android:paddingBottom="10dp"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/summary"
+            android:lineSpacingMultiplier="1.3"
+            android:textSize="@dimen/text_size_body"
+            android:paddingLeft="@dimen/text_edge_padding_infopopup"
+            android:paddingRight="@dimen/text_edge_padding_infopopup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="10dp"/>
+
+    </LinearLayout>
+</ScrollView>

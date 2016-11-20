@@ -1,0 +1,90 @@
+<resources>
+
+   <style name="MainTheme" parent="MaterialNavigationDrawerTheme.Light.DarkActionBar">
+
+        <!-- Spinner Pfeil und Zurück-Pfeil -->
+        <item name="colorControlNormal">@color/white</item>
+
+        <item name="rippleBackport">true</item>
+        <item name="sectionStyle">@style/MaterialSectionTheme.Light</item><!-- siehe style unten -->
+        <item name="learningPattern">false</item><!-- drawer versteckt beim Öffnen der App -->
+
+        <item name="singleAccount">true</item><!-- Remove the change account button -->
+
+       <item name="android:textColor">@color/black</item>
+       <item name="android:textColorPrimary">@color/black</item>
+
+       <item name="colorPrimary">@color/myColorPrimary</item>
+       <item name="colorPrimaryDark">@color/myColorPrimaryDark</item>
+       <item name="colorAccent">@color/myAccent</item>
+
+       <item name="md_dark_theme">false</item>
+       <item name="md_background_color">@color/white</item>
+       <item name="md_title_color">@color/black</item>
+       <item name="md_content_color">@color/DimGray</item>
+       <item name="md_neutral_color">@color/myAccent</item>
+       <item name="md_positive_color">@color/myAccent</item>
+       <item name="md_negative_color">@color/myAccent</item>
+       <item name="md_divider_color">@color/myAccent</item>
+       <item name="md_medium_font">Roboto-Medium.ttf</item>
+       <item name="md_regular_font">Roboto-Regular.ttf</item>
+       <item name="md_buttons_gravity">start</item>
+       <item name="md_btnstacked_gravity">center</item>
+       <item name="md_item_color">@color/DimGray</item>
+       <!-- <item name="md_icon">@mipmap/ic_launcher</item> -->
+
+    </style>
+
+    <style name="MaterialSectionTheme.Light">
+        <item name="sectionColorIcon">#000000</item>
+        <item name="sectionColorText">#000000</item>
+        <item name="sectionColorNotification">#000000</item>
+        <item name="sectionBackgroundColorPressed">#16000000</item>
+        <item name="sectionBackgroundColorSelected">@color/gray</item>
+        <item name="sectionBackgroundColor">#00FFFFFF</item>
+    </style>
+
+
+    <!-- Die coole runde Schlange -->
+    <style name="WikiMapProgressIndicator" parent="@android:style/Widget.ProgressBar">
+        <item name="android:colorForeground">@color/myAccent</item>
+        <item name="android:indeterminate">true</item>
+    </style>
+
+
+    <style name="MyToolbar" parent="Widget.AppCompat.ActionBar">
+        <item name="android:background">@color/myColorPrimary</item>
+        <item name="theme">@style/ThemeOverlay.MyToolbar</item>
+    </style>
+    <style name="ThemeOverlay.MyToolbar" parent="ThemeOverlay.AppCompat.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item>
+    </style>
+
+
+    <style name="AppCompatTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <!-- Spinner Pfeil und Zurück-Pfeil -->
+        <item name="colorControlNormal">@color/white</item>
+
+        <item name="android:textColorPrimary">@color/black</item>
+
+        <item name="colorPrimary">@color/myColorPrimary</item>
+        <item name="colorPrimaryDark">@color/myColorPrimaryDark</item>
+        <item name="colorAccent">@color/myAccent</item>
+
+        <item name="md_medium_font">Roboto-Medium.ttf</item>
+        <item name="md_regular_font">Roboto-Regular.ttf</item>
+    </style>
+
+
+    <style name="PrefsTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+        <item name="colorPrimary">@color/myColorPrimary</item>
+        <item name="colorPrimaryDark">@color/myColorPrimaryDark</item>
+        <item name="colorAccent">@color/myAccent</item>
+
+        <item name="md_medium_font">Roboto-Medium.ttf</item>
+        <item name="md_regular_font">Roboto-Regular.ttf</item>
+    </style>
+
+</resources>

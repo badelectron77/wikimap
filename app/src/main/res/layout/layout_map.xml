@@ -1,0 +1,159 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/map_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        app:navigationContentDescription="@string/abc_action_bar_up_description"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+        <com.medeozz.wikimap.ClickableFrameLayout
+            android:id="@+id/open_drawer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_selector"
+            android:padding="12dp">
+
+            <ImageView
+                android:src="@drawable/ic_menu_white_24dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/navigation"/>
+
+        </com.medeozz.wikimap.ClickableFrameLayout>
+
+        <View
+            android:background="@color/transparent_white_percent_40"
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"/>
+
+        <!-- damit die clickable area des Bildes größer wird, mit FrameLayout -->
+        <com.medeozz.wikimap.ClickableFrameLayout
+            android:id="@+id/scroll_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_selector"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/mapscrolling_icon"
+                android:src="@drawable/ic_location_disabled_white"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/map_scrolling"/>
+
+        </com.medeozz.wikimap.ClickableFrameLayout>
+
+        <View
+            android:background="@color/transparent_white_percent_40"
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"/>
+
+        <!-- damit die clickable area des Bildes größer wird, mit FrameLayout -->
+        <com.medeozz.wikimap.ClickableFrameLayout
+            android:id="@+id/scroll_map_once"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_selector"
+            android:padding="12dp">
+
+            <ImageView
+                android:id="@+id/mapscrolling_icon_once"
+                android:src="@drawable/ic_action_return_from_full_screen"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:contentDescription="@string/map_scrolling"/>
+
+        </com.medeozz.wikimap.ClickableFrameLayout>
+
+        <View
+            android:background="@color/transparent_white_percent_40"
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:id="@+id/num_marker_click"
+            android:background="@drawable/background_selector"
+            android:orientation="vertical"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/num_markers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/three_dots"
+                android:textSize="@dimen/text_size_subheader"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/articles"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/transparent_white_percent_40"
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"/>
+
+        <LinearLayout
+            android:layout_gravity="end"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_gravity="center_vertical"
+                android:background="@color/transparent_white_percent_40"
+                android:layout_width="0.1dp"
+                android:layout_height="30dp"/>
+
+            <!-- damit die clickable area des Bildes größer wird, mit FrameLayout -->
+            <com.medeozz.wikimap.ClickableFrameLayout
+                android:id="@+id/download_articles"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/background_selector"
+                android:padding="12dp">
+
+                <ImageView
+                    android:src="@drawable/ic_action_download_dark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="@string/map_scrolling"/>
+
+            </com.medeozz.wikimap.ClickableFrameLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <fragment
+        class="com.google.android.gms.maps.SupportMapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>

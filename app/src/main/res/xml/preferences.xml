@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory
+        android:title="@string/prefs_category_map"
+        android:layout="@layout/preference_custom_category">
+
+        <!-- Kartentyp -->
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:layout="@layout/preference_custom"
+            android:key="pref_maptype"
+            android:title="@string/prefs_list_maptype_title"
+            android:summary="%s"
+            android:entries="@array/prefs_list_maptype_entries"
+            android:entryValues="@array/prefs_list_maptype_entry_values"
+            android:defaultValue="@string/prefs_list_maptype_default_value"/>
+
+        <!-- Start-Zoomlevel -->
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:layout="@layout/preference_custom"
+            android:key="pref_startzoom"
+            android:title="@string/prefs_list_startzoom_title"
+            android:summary="%s"
+            android:entries="@array/prefs_list_startzoom_entries"
+            android:entryValues="@array/prefs_list_startzoom_entry_values"
+            android:defaultValue="@string/prefs_list_startzoom_default_value"/>
+
+        <!-- Standort-Update-Intervall -->
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:layout="@layout/preference_custom"
+            android:key="pref_updateinterval"
+            android:title="@string/pref_updateinterval_title"
+            android:summary="%s"
+            android:entries="@array/pref_updateinterval_entries"
+            android:entryValues="@array/pref_updateinterval_entry_values"
+            android:defaultValue="@string/pref_updateinterval_default_value"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/prefs_category_mobile_data"
+        android:layout="@layout/preference_custom_category">
+
+        <!-- Keine Vorschaubilder -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_nothumbnails"
+            android:layout="@layout/preference_custom_checkbox"
+            android:summary="@string/pref_nothumbnails_summary"
+            android:title="@string/pref_nothumbnails_title" />
+
+        <!-- Keine Bilder in Artikelpopups -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_nobigimages"
+            android:layout="@layout/preference_custom_checkbox"
+            android:summary="@string/pref_nobigimages_summary"
+            android:title="@string/pref_nobigimages_title" />
+
+        <!-- Keine Bilder in Artikelpopups -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_noimages_cardview"
+            android:layout="@layout/preference_custom_checkbox"
+            android:summary="@string/pref_noimages_cardview_summary"
+            android:title="@string/pref_noimages_cardview_title" />
+
+        <!-- Max. Anzahl Artikel -->
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:layout="@layout/preference_custom"
+            android:key="pref_maxrows"
+            android:title="@string/prefs_list_maxrows_title"
+            android:summary="%s"
+            android:entries="@array/prefs_list_maxrows_entries"
+            android:entryValues="@array/prefs_list_maxrows_entry_values"
+            android:defaultValue="@string/prefs_list_maxrows_default_value"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/prefs_category_appearance"
+        android:layout="@layout/preference_custom_category">
+
+        <!-- Im Hintergrund herunterladen -->
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="pref_downl_dlg"
+            android:layout="@layout/preference_custom_checkbox"
+            android:summary="@string/pref_downl_dlg_summary"
+            android:title="@string/pref_downl_dlg_title" />
+
+        <!-- Größe Markerbildchen -->
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:layout="@layout/preference_custom"
+            android:key="pref_thumbsize"
+            android:title="@string/prefs_thumbsize_title"
+            android:summary="%s"
+            android:entries="@array/prefs_thumbsize_entries"
+            android:entryValues="@array/prefs_thumbsize_entry_values"
+            android:defaultValue="@string/prefs_thumbsize_default_value"/>
+
+        <!-- Schriftgröße Markerbildchen -->
+        <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:layout="@layout/preference_custom"
+            android:key="pref_fontsize"
+            android:title="@string/prefs_fontsize_title"
+            android:summary="%s"
+            android:entries="@array/prefs_fontsize_entries"
+            android:entryValues="@array/prefs_fontsize_entry_values"
+            android:defaultValue="@string/prefs_fontsize_default_value"/>
+
+        <com.medeozz.wikimap.dashclockpicker.ColorPreference
+            android:key="pref_marker_color"
+            android:title="@string/prefs_marker_color_title"
+            android:summary="@string/prefs_marker_color_summary"
+            android:defaultValue="-1242880"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:layout="@layout/preference_custom_with_summary"
+            app:numColumns="5" />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:title="@string/prefs_category_wikipedia"
+        android:layout="@layout/preference_custom_category">
+
+        <!-- Wikipedia-Sprache -->
+       <com.afollestad.materialdialogs.prefs.MaterialListPreference
+            android:layout="@layout/preference_custom"
+            android:key="pref_wikilang"
+            android:title="@string/prefs_list_wikilang_title"
+            android:summary="%s"
+            android:entries="@array/prefs_list_wikilang_entries"
+            android:entryValues="@array/prefs_list_wikilang_entry_values"
+            android:defaultValue="@string/prefs_list_wikilang_default_value"/>
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

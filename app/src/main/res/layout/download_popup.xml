@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:text="@string/articles_downloading_title"
+        android:textSize="@dimen/text_size_subheader"
+        android:layout_width="wrap_content"
+        android:padding="@dimen/text_edge_padding_infopopup"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:text="@string/articles_downloading_hint"
+        android:textSize="@dimen/text_size_small_caps"
+        android:layout_width="wrap_content"
+        android:paddingLeft="@dimen/text_edge_padding_infopopup"
+        android:paddingRight="@dimen/text_edge_padding_infopopup"
+        android:paddingBottom="@dimen/text_edge_padding_infopopup"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/text_edge_padding_infopopup"
+        android:paddingRight="@dimen/text_edge_padding_infopopup"
+        android:paddingBottom="@dimen/text_edge_padding_infopopup"
+        android:orientation="horizontal">
+
+        <com.gc.materialdesign.views.ProgressBarCircularIndeterminate
+            android:id="@+id/progressBarCircularIndeterminate"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:background="#1E88E5" />
+
+        <TextView
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:id="@+id/articles_downloading_maxnumber"
+            android:text="@string/articles_downloading_maxnumber"
+            android:textSize="@dimen/text_size_body"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+</LinearLayout>

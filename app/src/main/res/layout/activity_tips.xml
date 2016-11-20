@@ -1,0 +1,190 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_tips_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        style="@style/MyToolbar"/>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_edge_padding"
+            android:paddingRight="@dimen/text_edge_padding"
+            android:orientation="vertical">
+
+            <!--########## WikiMap ##########################################-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:drawableLeft="@drawable/ic_launcher"
+                android:drawablePadding="10dp"
+                android:drawableStart="@drawable/ic_launcher"
+                android:gravity="center_vertical"
+                android:paddingTop="15dp"
+                android:text="@string/tips_text_headline"
+                android:fontFamily="serif"
+                android:textColor="@color/myLauncherIconRed"
+                android:textSize="@dimen/text_size_header" />
+
+            <!--########## Allgemeines ##########################################-->
+            <TextView
+                android:text="@string/tips_text_body_general_title"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="2dp"
+                android:textAllCaps="true"
+                android:textColor="@color/myColorPrimary"
+                android:textSize="@dimen/text_size_small_caps"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/myColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/tips_text_body_general"
+                android:textSize="@dimen/text_size_body" />
+
+            <!--########## MapScrolling ##########################################-->
+            <TextView
+                android:text="@string/tips_text_body_mapscrolling_title"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="2dp"
+                android:textAllCaps="true"
+                android:textColor="@color/myColorPrimary"
+                android:textSize="@dimen/text_size_small_caps"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/myColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/tips_text_body_mapscrolling"
+                android:textSize="@dimen/text_size_body" />
+
+            <!--########### Performance #########################################-->
+            <TextView
+                android:text="@string/tips_text_body_performance_title"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/text_edge_padding"
+                android:paddingBottom="2dp"
+                android:textAllCaps="true"
+                android:textColor="@color/myColorPrimary"
+                android:textSize="@dimen/text_size_small_caps"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/myColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/tips_text_body_performance"
+                android:textSize="@dimen/text_size_body" />
+
+            <!--############ Sprache Wikipedia-Artikel ########################################-->
+            <TextView
+                android:text="@string/tips_text_body_country_title"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/text_edge_padding"
+                android:paddingBottom="2dp"
+                android:textAllCaps="true"
+                android:textColor="@color/myColorPrimary"
+                android:textSize="@dimen/text_size_small_caps"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/myColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/tips_text_body_country"
+                android:textSize="@dimen/text_size_body" />
+
+            <!--############ Internet ########################################-->
+            <TextView
+                android:text="@string/tips_text_body_internet_title"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/text_edge_padding"
+                android:paddingBottom="2dp"
+                android:textAllCaps="true"
+                android:textColor="@color/myColorPrimary"
+                android:textSize="@dimen/text_size_small_caps"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/myColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:text="@string/tips_text_body_internet"
+                android:textSize="@dimen/text_size_body" />
+
+            <!--########### Akkulaufzeit #########################################-->
+            <TextView
+                android:text="@string/tips_text_body_battery_title"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/text_edge_padding"
+                android:paddingBottom="2dp"
+                android:textAllCaps="true"
+                android:textColor="@color/myColorPrimary"
+                android:textSize="@dimen/text_size_small_caps"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/myColorPrimary" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="50dp"
+                android:text="@string/tips_text_body_battery"
+                android:textSize="@dimen/text_size_body" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

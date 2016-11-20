@@ -1,0 +1,120 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/cardview_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:paddingRight="12dp"
+            android:paddingLeft="12dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/cardview_num_markers"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/three_dots"
+                android:textSize="@dimen/text_size_subheader"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+                android:text="@string/articles"
+                android:textSize="12sp"/>
+
+        </LinearLayout>
+
+        <View
+            android:background="@color/transparent_white_percent_40"
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"/>
+
+        <com.medeozz.wikimap.ClickableFrameLayout
+            android:id="@+id/scrolltotop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_selector"
+            android:padding="12dp">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_fa_long_arrow_up"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.medeozz.wikimap.ClickableFrameLayout>
+
+        <View
+            android:background="@color/transparent_white_percent_40"
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"/>
+
+        <com.medeozz.wikimap.ClickableFrameLayout
+            android:id="@+id/scrolltobottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_selector"
+            android:padding="12dp">
+
+            <ImageView
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_fa_long_arrow_down"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </com.medeozz.wikimap.ClickableFrameLayout>
+
+        <View
+            android:background="@color/transparent_white_percent_40"
+            android:layout_width="0.1dp"
+            android:layout_height="30dp"/>
+
+        <FrameLayout
+            android:layout_gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="0dp">
+
+            <Spinner
+                android:id="@+id/spinner_nav"
+                android:popupBackground="@color/myColorPrimaryDark"
+                android:paddingLeft="0dp"
+                android:paddingRight="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content" />
+
+        </FrameLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/cardList"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:scrollbarThumbVertical="@drawable/cardview_scrollbar"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:background="@drawable/cardview_background"
+        android:scrollbarStyle="outsideOverlay"
+        android:paddingTop="0dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

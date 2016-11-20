@@ -1,0 +1,99 @@
+<LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_about_toolbar"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        style="@style/MyToolbar"
+        android:minHeight="?attr/actionBarSize"/>
+
+    <ScrollView
+        android:fillViewport="true"
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/text_edge_padding"
+            android:paddingRight="@dimen/text_edge_padding"
+            android:orientation="vertical">
+
+            <ImageView
+                android:src="@drawable/ic_launcher"
+                android:contentDescription="@string/about_text_launcher_icon"
+                android:paddingTop="@dimen/text_edge_padding"
+                android:paddingBottom="10dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="144dp"
+                android:layout_height="144dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:fontFamily="serif"
+                android:text="@string/app_name"
+                android:textColor="@color/myLauncherIconRed"
+                android:textSize="@dimen/text_size_monster_header" />
+
+            <TextView
+                android:id="@+id/about_version"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="5dp"
+                android:textColor="@color/myLauncherIconRed"
+                android:textSize="@dimen/text_size_subheader" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="25dp"
+                android:fontFamily="sans-serif-light"
+                android:textStyle="italic"
+                android:text="@string/about_text_body_01"
+                android:textSize="@dimen/text_size_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="15dp"
+                android:text="@string/about_text_body_02"
+                android:textSize="@dimen/text_size_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:textColorLink="@color/myColorPrimary"
+                android:paddingBottom="15dp"
+                android:text="@string/about_text_body_03"
+                android:textSize="@dimen/text_size_body" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:linksClickable="true"
+                android:autoLink="all"
+                android:paddingBottom="@dimen/text_edge_padding"
+                android:text="@string/about_text_body_04"
+                android:textSize="@dimen/text_size_body" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
+

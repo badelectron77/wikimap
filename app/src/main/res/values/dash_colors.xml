@@ -1,0 +1,25 @@
+<resources>
+
+    <string-array name="default_color_choice_values" translatable="false">
+
+        <item>#F50057</item><!-- 0:  -720809   -->
+        <item>#ff00b0</item><!-- 1:  -65360    -->
+        <item>#006aff</item><!-- 2:  -16749825 -->
+        <item>#31ff00</item><!-- 3:  -13500672 -->
+        <item>#fff700</item><!-- 4:  -2304     -->
+
+        <item>#ed0900</item><!-- 5:  -1242880 default Rot -->
+        <item>#9800ff</item><!-- 6:  -6815489  -->
+        <item>#000c9d</item><!-- 7:  -16773987 -->
+        <item>#0aae00</item><!-- 8:  -16077312 -->
+        <item>#ffae1f</item><!-- 9:  -20961    -->
+
+        <item>#710000</item><!-- 10: -9371648  -->
+        <item>#5900a0</item><!-- 11: -10944352 -->
+        <item>#000a4d</item><!-- 12: -16774579 -->
+        <item>#006001</item><!-- 13: -16752639 -->
+        <item>#af4b00</item><!-- 14: -5289216  -->
+
+    </string-array>
+
+</resources>

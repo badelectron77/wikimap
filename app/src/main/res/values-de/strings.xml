@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WikiMap</string>
+    <string name="articles_downloading_title">Lade Wikipedia-Artikel herunter&#8230;</string>
+    <string name="articles_downloading_hint">(Dieses Popup kann in den Einstellungen deaktiviert werden)</string>
+    <string name="articles_downloading_maxnumber">Max. Anzahl Artikel</string>
+    <string name="full_Article">Mehr&#8230;</string>
+    <string name="action_prefs">Einstellungen</string>
+    <string name="menu_about">Über</string>
+    <string name="ok">OK</string>
+    <string name="no">Nein</string>
+    <string name="download_in_background">Im Hintergrund herunterladen</string>
+    <string name="location_searching">Suche aktuelle Position&#8230;</string>
+    <string name="marker_infowindow_distance">Entfernung</string>
+    <string name="marker_infowindow_elevation">Höhe</string>
+
+    <string name="about_text_body_01">Copyright &#169; 2015 by CrankInHouse Software.\nAlle Rechte vorbehalten.</string>
+
+    <string name="about_text_body_02"><b>Programmierung</b> von Stefan Jösch.\n<b>Grafiken und Übersetzungen</b>
+        von Burkhard Menn.\n<b>Tester:</b> Jack Dalton, Jonathan Graf, Matthias Krach,
+        Mohani Poulet, Burkhard Menn, Pascal Pree, Yvonne Roos, Rainer Poulet.\n<b>Besonderen
+        Dank</b> an Stackoverflow und Github.</string>
+
+    <string name="about_text_body_03"><b>Kontaktieren Sie uns</b> unter wikimap.app@gmail.com wenn Sie:\n
+        &#8226; Vorschläge oder Kommentare haben\n
+        &#8226; diese App in Ihre Sprache übersetzen möchten\n
+        &#8226; einfach nur \'Hallo\' sagen möchten ;)</string>
+
+    <string name="about_text_body_04"><b>Verwendete Bibliotheken und APIs:</b>\nACRA\nAndroid Maps Utils\nFollestad Material
+        Dialogs\nGeoNames Webservices\nGoogle Maps Android API v2\nJenkins Calligraphy\nJSON Java\nMediaWiki Web
+        API\nNavas Material Design Library\nNeokree Material NavigationDrawer\nNispok Snackbar\nSquareup Okhttp\nSquareup Picasso
+    </string>
+
+    <string name="about_text_version">Version</string>
+    <string name="title_activity_about">Über</string>
+    <string name="map_type_button">Kartentyp</string>
+    <string name="map_type_street">Normal</string>
+    <string name="map_type_hybrid">Hybrid</string>
+    <string name="map_type_terrain">Gelände</string>
+    <string name="dialog_gps_title">GPS nicht aktiviert</string>
+    <string name="dialog_gps_content">Möchten Sie GPS einschalten?</string>
+    <string name="dialog_gps_agree">GPS-Einstellung</string>
+    <string name="dialog_gps_disagree">Nein</string>
+    <string name="download_articles">Artikel herunterladen</string>
+    <string name="refresh_articles">Wikipedia-Artikel herunterladen</string>
+    <string name="map_scrolling">Autoscrolling</string>
+    <string name="map_scrolling_off">Autoscrolling aus</string>
+    <string name="map_scrolling_on">Autoscrolling an</string>
+    <string name="menu_tips">Hinweise &amp; Tipps</string>
+    <string name="articles_downloaded">Artikel heruntergeladen</string>
+    <string name="articles_total">insgesamt</string>
+    <string name="menu_delete_markers">Alle Artikel löschen</string>
+    <string name="markers_deleted">Artikel gelöscht</string>
+    <string name="tips_text_headline">WikiMap</string>
+    <string name="tips_text_body_general">Ein Download von 100 Artikeln kann bis zu 500 kB
+        mobile Datenmenge verursachen, zuzüglich großer Artikelbilder anschließend in der Detailansicht. Daher kann es sinnvoll sein,
+        die maximale Anzahl der Artikel pro Download einzuschränken, was in den Einstellungen möglich ist.\nSollte z.B. im Ausland
+        das Mobildaten-Kontingent begrenzt sein, kann der Download von Bildern komplett deaktiviert werden.
+    </string>
+    <string name="tips_text_body_mapscrolling">Diese App verfügt über zwei Arten, die Karte zum eigenen Standort zu bewegen:\n\nErstens
+        mittels des linken Buttons in der oberen Menüleiste, wodurch ein Punkt in der Mitte des Buttons erscheint und der
+        eigene Standort permanent in der Mitte der Karte liegt. Dies
+        kann z.B. nützlich sein während eigener Bewegung durch Autofahren oder Gehen. Durch nochmaliges Klicken auf den Button
+        wird das Zentrieren der Karte auf den eigenen Standort wieder deaktiviert und der
+        Punkt in der Mitte des Buttons verschwindet.\n\nZweitens mittels des rechts daneben befindlichen Buttons,
+        der ein einmaliges Zentrieren der Karte auf den eigenen Standort bewirkt.
+    </string>
+    <string name="tips_text_body_performance">Bedingt durch die begrenzte Rechenkapazität eines mobilen Geräts kann es sein,
+        dass bei einer großen Anzahl von Artikeln die Karte schwerfällig reagiert. Daher werden die ältesten Artikel regelmäßig automatisch gelöscht.
+        Man kann Maker auch manuell löschen (Menü, Alle Artikel löschen).
+    </string>
+    <string name="tips_text_body_internet">Ohne eine stabile und ausreichend starke Internetverbindung kann die App nicht flüssig funktionieren.
+        Es sollten daher der Kartentyp Hybrid ebenso wie das Herunterladen von vielen Artikeln (mehr als 20)
+        bei schwacher Internetverbindung vermieden werden.
+    </string>
+    <string name="tips_text_body_battery">Wird der exakte Standort nicht benötigt oder ist dieser bekannt, kann GPS aus
+        Energiespargründen in den Geräteinstellungen deaktiviert werden. Die Funktionalität der App wird dadurch nicht beeinträchtigt.
+    </string>
+    <string name="tips_text_body_country">Sollte es im Ausland zu wenig deutsche Wikipedia-Artikel geben,
+        kann es bei entsprechenden Fremdsprachenkenntnissen hilfreich sein, auf die englische Wikipedia
+        oder die landeseigene Wikipedia umzuschalten, was in den Einstellungen möglich ist. Derzeit gibt es ca. 56.000 deutsche
+        und ca. 100.000 englische ortsbasierte Wikipedia-Artikel weltweit.\n\nAußerdem ist es möglich, bis zu 300 Artikel in die
+        lokale Datenbank im voraus zu laden. Diese werden bei jedem Aufruf der App wiederhergestellt, auch im Flugmodus. Leider
+        ist es derzeit noch nicht möglich, die Karte für den Offlinebetrieb zu speichern.
+    </string>
+
+    <string name="title_activity_tips">Hilfe</string>
+
+    <string name="navigate">Navi</string>
+
+    <string name="prefs_category_map">Karte</string>
+
+    <string name="prefs_list_maptype_title">Kartentyp bei Appstart</string>
+
+    <string-array name="prefs_list_maptype_entries">
+        <item>Normal</item>
+        <item>Hybrid</item>
+        <item>Gelände</item>
+    </string-array>
+    <string-array name="prefs_list_maptype_entry_values">
+        <item>normal</item>
+        <item>hybrid</item>
+        <item>terrain</item>
+    </string-array>
+    <string name="prefs_list_maptype_default_value">normal</string>
+
+
+    <string name="prefs_list_startzoom_title">Start-Zoomlevel</string>
+    <string-array name="prefs_list_startzoom_entries">
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string-array name="prefs_list_startzoom_entry_values">
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+    </string-array>
+    <string name="prefs_list_startzoom_default_value">12</string>
+
+
+    <string name="pref_downl_dlg_title">Im Hintergrund herunterladen</string>
+
+    <string name="prefs_list_wikilang_title">Wikipedia-Sprache</string>
+    <string-array name="prefs_list_wikilang_entries">
+
+        <item>Afrikaans</item>
+        <item>Arabisch</item>
+        <item>Bretonisch</item>
+        <item>Bulgarisch</item>
+        <item>Chinesisch</item>
+
+        <item>Dänisch</item>
+        <item>Deutsch</item>
+        <item>Englisch</item>
+        <item>Finnisch</item>
+        <item>Französisch</item>
+        <!-- 11 -->
+
+        <item>Georgisch</item>
+        <item>Griechisch</item>
+        <item>Hebräisch</item>
+        <item>Holländisch</item>
+        <item>Hungarisch</item>
+
+        <item>Icelandisch</item>
+        <item>Indonesisch</item>
+        <item>Italienisch</item>
+        <item>Japanisch</item>
+        <item>Katalanisch</item>
+
+        <!-- 21 -->
+        <item>Litauisch</item>
+        <item>Luxemburgisch</item>
+        <item>Norwegisch</item>
+        <item>Persisch</item>
+        <item>Polnisch</item>
+
+        <item>Portugiesisch</item>
+        <item>Rumänisch</item>
+        <item>Russisch</item>
+        <item>Serbisch</item>
+        <item>Slovakisch</item>
+
+        <!-- 31 -->
+        <item>Slovenisch</item>
+        <item>Spanisch</item>
+        <item>Thai</item>
+        <item>Türkisch</item>
+        <item>Ukrainisch</item>
+
+        <item>Vietnamesisch</item>
+
+    </string-array>
+    <string-array name="prefs_list_wikilang_entry_values">
+
+        <item>af</item>
+        <item>ar</item>
+        <item>br</item>
+        <item>bg</item>
+        <item>zh</item>
+
+        <item>da</item>
+        <item>de</item>
+        <item>en</item>
+        <item>fi</item>
+        <item>fr</item>
+        <!-- 11 -->
+
+        <item>ka</item>
+        <item>el</item>
+        <item>he</item>
+        <item>nl</item>
+        <item>hu</item>
+
+        <item>is</item>
+        <item>id</item>
+        <item>it</item>
+        <item>jv</item>
+        <item>ca</item>
+
+        <!-- 21 -->
+        <item>lt</item>
+        <item>lb</item>
+        <item>no</item>
+        <item>fa</item>
+        <item>pl</item>
+
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>sr</item>
+        <item>sk</item>
+
+        <!-- 31 -->
+        <item>sl</item>
+        <item>es</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>uk</item>
+
+        <item>vi</item>
+
+    </string-array>
+    <string name="prefs_list_wikilang_default_value">de</string>
+
+
+    <string name="prefs_list_maxrows_title">Max. Anzahl Artikel</string>
+    <string-array name="prefs_list_maxrows_entries">
+        <item>5 Artikel (schwaches Internet)</item>
+        <item>20 Artikel</item>
+        <item>50 Artikel</item>
+        <item>100 Artikel (LTE)</item>
+    </string-array>
+    <string-array name="prefs_list_maxrows_entry_values">
+        <item>5</item>
+        <item>20</item>
+        <item>50</item>
+        <item>100</item>
+    </string-array>
+    <string name="prefs_list_maxrows_default_value">20</string>
+
+
+    <string name="prefs_thumbsize_title">Größe Markerbildchen (Neustart)</string>
+    <string-array name="prefs_thumbsize_entries">
+        <item>riesig</item>
+        <item>groß</item>
+        <item>normal</item>
+        <item>klein</item>
+        <item>winzig</item>
+    </string-array>
+    <string-array name="prefs_thumbsize_entry_values">
+        <item>huge</item>
+        <item>big</item>
+        <item>normal</item>
+        <item>small</item>
+        <item>tiny</item>
+    </string-array>
+    <string name="prefs_thumbsize_default_value">normal</string>
+
+
+    <string name="pref_updateinterval_title">Max. Standort-Update-Intervall (Neustart)</string>
+    <string-array name="pref_updateinterval_entries">
+        <item>10 Sekunden (weniger Akkuverbrauch, z.B. in Gebäuden)</item>
+        <item>1 Sekunde (für automatisches GPS-Scrolling)</item>
+    </string-array>
+    <string-array name="pref_updateinterval_entry_values">
+        <item>10000</item>
+        <item>1000</item>
+    </string-array>
+    <string name="pref_updateinterval_default_value">1000</string>
+
+
+
+    <string name="prefs_fontsize_title">Schriftgröße Marker (Neustart)</string>
+    <string-array name="prefs_fontsize_entries">
+        <item>riesig</item>
+        <item>groß</item>
+        <item>normal</item>
+        <item>klein</item>
+        <item>winzig</item>
+    </string-array>
+    <string-array name="prefs_fontsize_entry_values">
+        <item>huge</item>
+        <item>big</item>
+        <item>normal</item>
+        <item>small</item>
+        <item>tiny</item>
+    </string-array>
+    <string name="prefs_fontsize_default_value">normal</string>
+
+
+    <string name="prefs_activity_title">Einstellungen</string>
+    <string name="menu_settings">Einstellungen</string>
+    <string name="prefs_category_wikipedia">Wikipedia</string>
+    <string name="tips_text_body_general_title">Allgemeines</string>
+    <string name="tips_text_body_performance_title">Performance</string>
+    <string name="tips_text_body_internet_title">Internet</string>
+    <string name="tips_text_body_battery_title">Akkulaufzeit</string>
+    <string name="please_wait">Bitte warten</string>
+    <string name="cancel">Schließen</string>
+    <string name="close">Schließen</string>
+    <string name="articles">Artikel</string>
+    <string name="including">darunter</string>
+    <string name="you_are_offline">Kein Netzwerk</string>
+    <string name="please_try_again">Bitte erneut versuchen.</string>
+    <string name="zoom_for_details">Hineinzoomen für Details</string>
+    <string name="pref_nothumbnails_title">Keine Markerbildchen</string>
+    <string name="fetching_article">Artikel holen</string>
+    <string name="prefs_category_mobile_data">Mobile Daten</string>
+    <string name="prefs_category_appearance">Erscheinungsbild</string>
+    <string name="pref_nobigimages_title">Kein Bild in Artikelvorschau</string>
+    <string name="no_location">Keinen Standort gefunden. Auf Ihrem Gerät ist der Standort offenbar deaktiviert.</string>
+    <string name="wikimap_starting">WikiMap startet</string>
+    <string name="articles_recovered">Artikel aus früheren Downloads wiederhergestellt</string>
+    <string name="section_map">KARTENTYP</string>
+    <string name="pref_nothumbnails_summary">Dadurch wird das Datenvolumen erheblich reduziert. Änderung wird bei nächstem Download wirksam.</string>
+    <string name="pref_nobigimages_summary">Die Wikipedia-Artikelvorschau (Popup nach Klick auf Marker) enthält kein Bild.</string>
+    <string name="pref_downl_dlg_summary">Beim Download von Wikipedia-Artikeln wird kein Popup angezeigt.</string>
+    <string name="tips_text_body_mapscrolling_title">Eigener Standort</string>
+    <string name="tips_text_body_country_title">WikiMap im Ausland</string>
+    <string name="navigation">Navigation</string>
+    <string name="prefs_marker_color_title">Markerfarbe (Neustart)</string>
+    <string name="prefs_marker_color_summary">Hintergrundfarbe der Marker auf der Karte.</string>
+    <string name="cardview_activity_title">Wikipedia-Artikel</string>
+    <string name="above_sea_level">ü. NHN</string>
+
+    <string name="cardview_alphabetical">A-Z</string>
+    <string name="cardview_recent">Neu</string>
+    <string name="cardview_nearest">Entf.</string>
+    <string name="cardview_highest">Höhe</string>
+    <string name="pref_noimages_cardview_title">Keine Bilder in Liste</string>
+    <string name="pref_noimages_cardview_summary">In der Liste aller Wikipedia-Artikel werden keine Bilder angezeigt.</string>
+    <string name="articles_list">Artikel-Liste</string>
+
+</resources>
